@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+
+  /* outline: 2px solid red; */
 }
 
 html {
@@ -230,7 +232,7 @@ nav {
   direction: ltr;
   right: 100%;
   transition: 0.4s;
-  top: 70px;
+  top: 60px;
 }
 
 .nav-mobile.is-active {
@@ -295,15 +297,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  /* margin: 30px 0; */
-
-  /* background: url(/img/hero\ bg.webp);
-    background-repeat: no-repeat;
-    background-position: 100% 50%; */
-  /* background-position-y: 50%; */
-  /* background-position-x: 800px; */
-  /* background-position-x: 150%; */
-  /* background-size: contain; */
 }
 
 .hero .left,
@@ -321,7 +314,6 @@ nav {
 }
 
 .hero .right {
-  /* padding-left: 30px; */
   text-align: end;
 }
 
@@ -402,8 +394,6 @@ nav {
 }
 
 .why-us .content h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 36px;
   margin-bottom: 16px;
 }
 
@@ -572,26 +562,36 @@ footer {
 
 .offer .tile .tile-content {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin: 64px 0;
 }
 
 .offer .tile .tile-content .left {
-  width: 40%;
+  width: 50%;
 }
 
 .offer .tile .tile-content .left img {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
+  /* aspect-ratio: ; */
 }
 
 .offer .tile .tile-content .right {
-  padding: 0 5%;
-  width: 60%;
+  padding: 2% 5%;
+  width: 50%;
+  margin-top: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
 }
 
 .offer-sub {
   color: var(--grey);
-  padding: 16px;
+  padding: 12px 16px;
   border: 2px solid var(--grey);
   border-radius: 16px;
   width: fit-content;
@@ -806,6 +806,11 @@ footer {
     top: 0;
     z-index: 1;
   }
+
+  .logo a img {
+    width: 70%;
+  }
+
   .nav-menu {
     display: none;
   }
@@ -888,8 +893,12 @@ footer {
   }
 
   .footer-menu {
-    text-align: left;
     width: 40%;
+  }
+
+  .footer-menu .menu {
+    display: grid;
+    place-items: center;
   }
 
   .pc {
