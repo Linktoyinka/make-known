@@ -694,6 +694,41 @@ footer {
   background-color: #006DDC1A;
 }
 
+.service-work {
+  /* position: relative;
+  height: auto; */
+
+  background-image: url(/img/service\ work\ bg.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  padding: 180px 5%;
+
+}
+
+.service-work .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.service-work .content .heading {
+  font-size: 144px;
+  font-weight: 700;
+  color: var(--white) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  /* -webkit-text-stroke-color: #004993; */
+  text-align: center;
+  text-transform: uppercase;
+
+  /* position: absolute; */
+  display: grid;
+  place-items: center;
+  width: 100%;
+
+  /* top: 32%; */
+}
+
 
 /* CONTACT PAGE */
 .contact {
@@ -923,6 +958,15 @@ form button {
     gap: 50px;
   }
 
+  .menu-header {
+    text-align: center;
+  }
+
+  .footer-menu .menu {
+    display: grid;
+    place-items: center;
+  }
+
   .main-footer .left,
   .main-footer .right {
     width: 100%;
@@ -956,6 +1000,10 @@ form button {
 
   .contact .left, .contact .right {
     width: 100%;
+  }
+
+  .contact .left {
+    padding-right: unset;
   }
 }
 
@@ -1055,11 +1103,6 @@ form button {
     width: 40%;
   }
 
-  .footer-menu .menu {
-    display: grid;
-    place-items: center;
-  }
-
   .pc {
     display: none;
   }
@@ -1108,6 +1151,11 @@ form button {
     display: none;
   }
 
+  .contact-details {
+    display: grid;
+    place-items: center;
+  }
+
   .contact .left h1:nth-child(3) {
     display: unset;
   }
@@ -1128,9 +1176,14 @@ form button {
     text-align: left;
   }
 
-  form button {
-    width: inherit;
+  #submit {
+    width: 100%;
   }
+
+  .box2 {
+    aspect-ratio: 4/2;
+  }
+  
 
   .contact, .service-hero {
     background-image: url(/img/mobilebg\ right.webp), url(/img/mobilebg\ left.webp);
