@@ -695,35 +695,32 @@ footer {
 }
 
 .service-work {
-  /* position: relative;
-  height: auto; */
-
   background-image: url(/img/service\ work\ bg.webp);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
   padding: 180px 5%;
 
-}
-
-.service-work .image img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.service-work .content .heading a {
-  font-size: 144px;
-  font-weight: 700;
-  color: var(--white);
+  
   display: grid;
   place-items: center;
   width: 100%;
 }
 
-.service-work .content .heading a:hover {
+.service-work .content .heading a {
+  font-size: 144px;
+  font-weight: 700; 
   color: rgba(255, 255, 255, 0.644);
+}
+
+.service-work .content .heading a:hover {
+  color: var(--white);
   transform: scale(1.1);
   transition: ease-in-out .4s;
+}
+
+.service-work .btn-center .sec-btn{
+  display: none;
 }
 
 
@@ -1149,6 +1146,14 @@ form button {
   }
 
   .divider {
+    display: none;
+  }
+
+  .service-work .btn-center .sec-btn {
+    display: unset;
+  }
+
+  .service-work .content .heading {
     display: none;
   }
 
