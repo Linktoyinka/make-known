@@ -711,22 +711,19 @@ footer {
   object-fit: cover;
 }
 
-.service-work .content .heading {
+.service-work .content .heading a {
   font-size: 144px;
   font-weight: 700;
-  color: var(--white) !important;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  /* -webkit-text-stroke-color: #004993; */
-  text-align: center;
-  text-transform: uppercase;
-
-  /* position: absolute; */
+  color: var(--white);
   display: grid;
   place-items: center;
   width: 100%;
+}
 
-  /* top: 32%; */
+.service-work .content .heading a:hover {
+  color: rgba(255, 255, 255, 0.644);
+  transform: scale(1.1);
+  transition: ease-in-out .4s;
 }
 
 
@@ -936,6 +933,10 @@ form button {
 
   .contact-details a {
     font-size: 16px;
+  }
+
+  .service-work .content .heading a {
+    font-size: 100px;
   }
 }
 
