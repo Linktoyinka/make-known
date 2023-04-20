@@ -86,10 +86,12 @@ html {
   color: var(--white);
   cursor: pointer;
   width: fit-content;
+  border: 2px solid var(--primary);
 }
 
 .pri-btn:hover {
   background-color: var(--primary-hover);
+  border: 2px solid #CCE2F8;
   transition: 0.6s;
 }
 
