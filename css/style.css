@@ -884,13 +884,25 @@ form button {
   border: 1px solid var(--grey-100);
   text-align: center;
   padding: 40px;
+
+  display: grid;
+  place-items: center;
+}
+
+.team .card .img {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 999px;
+  /* outline: saddlebrown 3px solid; */
 }
 
 .team .card .img img {
   border-radius: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
-  width: 50%;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .team .card .img img:hover {
@@ -1131,9 +1143,17 @@ form button {
     width: 45%;
     padding: 20px;
   }
+  
+  .team .card .img {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 999px;
+    /* outline: saddlebrown 3px solid; */
+  }
 
   .team .card .img img {
-    width: 60%;
+    width: 100%;
   }
 
   /* PORFOLIO PAGE */
