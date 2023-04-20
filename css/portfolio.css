@@ -46,10 +46,19 @@ figcaption {
     display: block;
     font-weight: 400;
     font-size: 20px;
-    text-decoration: underline;
     color: #006DDC;
-    /* line-height: 32px; */
     margin: 20px;
+    
+    /* width: fit-content; */
+}
+
+.portfolio-links a:hover {
+    text-decoration: underline;
+    color: #559EE8;
+}
+
+.portfolio-links a:active {
+    color: #004993;
 }
 
 
