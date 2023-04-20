@@ -577,7 +577,9 @@ footer {
 
 .offer .tile .tile-content {
   display: flex;
-  /* align-items: center; */
+}
+
+.offer .tile .tile-content:not(:first-child) {  
   margin: 64px 0;
 }
 
@@ -589,7 +591,6 @@ footer {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* aspect-ratio: ; */
 }
 
 .offer .tile .tile-content .right {
@@ -602,6 +603,10 @@ footer {
   justify-content: center;
 
   
+}
+
+.offer .tile .tile-content .right h3 {
+  margin-top: 20px;
 }
 
 .offer-sub {
@@ -797,11 +802,6 @@ label {
   margin: 32px 0 12px 0;
 }
 
-/* .form-field {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .form-field .form-details {
   width: 47%;
 }
@@ -848,6 +848,56 @@ form button {
 }
 
 
+/* ABOUT PAGE */
+.strategies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.strategies .card {
+  width: 30%;
+  text-align: center;
+}
+
+.strategies .card .img {
+  margin-bottom: 20px;
+}
+
+.strategies .card .img img {
+  border-radius: 20px;
+  aspect-ratio: 1/1;
+  width: 30%;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.team .card {
+  width: 32%;
+  border-radius: 24px;
+  border: 1px solid var(--grey-100);
+  text-align: center;
+  padding: 40px;
+}
+
+.team .card .img img {
+  border-radius: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 50%;
+}
+
+.team .card .content h3 {
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.team .card .content p {
+  margin: 0;
+}
 
 
 
@@ -1002,6 +1052,26 @@ form button {
 
   .contact .left {
     padding-right: unset;
+  }
+
+  /* ABOUT PAGE */
+  .strategies .card .img img {
+    width: 40%;
+  }
+
+  .team {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .team .card {
+    width: 45%;
+    padding: 20px;
+  }
+
+  .team .card .img img {
+    width: 60%;
   }
 }
 
@@ -1196,5 +1266,24 @@ form button {
     background-position: 100% 0, 0 0;
     background-repeat: no-repeat, no-repeat;
     background-size: contain, contain;
+  }
+
+  /* ABOUT PAGE */
+  .strategies {
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  .strategies .card {
+    width: 100%;
+  }
+
+  .strategies .card .img img {
+    width: 25%;
+  }
+
+  .team .card {
+    width: 90%;
+    padding: 15px;
   }
 }
