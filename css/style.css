@@ -915,6 +915,16 @@ form button {
   transition: .4s;
 }
 
+.team .card .content {
+  display: grid;
+  place-items: center;
+}
+
+.team .card .content button {
+  margin-top: 10px;
+  display: none;
+}
+
 .team .card .content h3 {
   margin-top: 24px;
   cursor: pointer;
@@ -942,6 +952,11 @@ form button {
 
 .about-contact-details a i {
   color: var(--primary);
+}
+
+/* PORTFOLIO */
+.port-hero {
+  padding: 150px 0;
 }
 
 
@@ -1395,5 +1410,9 @@ form button {
     width: 100%;
     text-align: left;
     margin: 40px 0;
+  }
+
+  .team .card .content button {
+    display: unset;
   }
 }

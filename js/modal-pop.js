@@ -1,10 +1,16 @@
 // TOBI MODAL
 const modal = document.getElementById("myModal1");
 const btn = document.getElementById("modal1");
+const btnTobi = document.getElementById("modal1a");
 const span = document.getElementsByClassName("close-1")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// for mobile trigger
+btnTobi.onclick = function() {
   modal.style.display = "block";
 }
 
@@ -24,10 +30,15 @@ window.onclick = function(event) {
 // MICAH MODAL
 const modalMicah = document.getElementById("myModal2");
 const btnMicah = document.getElementById("modal2");
+const btnMicahMobile = document.getElementById("modal2a");
 const spanMicah = document.getElementsByClassName("close-2")[0];
 
 // When the user clicks on the button, open the modal
 btnMicah.onclick = function() {
+  modalMicah.style.display = "block";
+}
+
+btnMicahMobile.onclick = function() {
   modalMicah.style.display = "block";
 }
 
@@ -47,10 +58,15 @@ window.onclick = function(event) {
 // Sharon MODAL
 const modalSharon = document.getElementById("myModal3");
 const btnSharon = document.getElementById("modal3");
+const btnSharonMobile = document.getElementById("modal3a");
 const spanSharon = document.getElementsByClassName("close-3")[0];
 
 // When the user clicks on the button, open the modal
 btnSharon.onclick = function() {
+  modalSharon.style.display = "block";
+}
+
+btnSharonMobile.onclick = function() {
   modalSharon.style.display = "block";
 }
 
