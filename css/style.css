@@ -1142,6 +1142,10 @@ form button {
 }
 
 @media screen and (max-width: 650px) {
+  .pad {
+    padding: 40px 5%;
+  }
+
   header {
     position: sticky;
     top: 0;
