@@ -13,8 +13,16 @@ li::marker {
 .portfolio-gallery {
     display: flex;
     justify-content: space-between;
-    padding: 20px 5%;
+    padding: 40px 5%;
     flex-wrap: wrap;
+}
+
+.portfolio-gallery .big-img {
+    width: 100%;
+}
+
+.portfolio-gallery .big-img img {
+    width: 100%;
 }
 
 .portfolio-gallery .img {
@@ -25,11 +33,34 @@ li::marker {
     width: 100%;
 }
 
+figcaption {
+    text-align: center;
+    color: #808080;
+}
+
+.p-links {
+    padding: 20px 5%;
+}
+
+.portfolio-links a {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #006DDC;
+    /* line-height: 32px; */
+    margin: 20px;
+}
+
 
 @media screen and (max-width: 1000px) {
     li {
         font-size: 16px;
       }
+
+      .portfolio-links a {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 650px) {
