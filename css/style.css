@@ -98,6 +98,7 @@ html {
 .pri-btn:disabled {
   background-color: var(--grey-100);
   cursor: not-allowed;
+  border: 2px solid var(--grey-100);
 }
 
 .pri-btn:active {
