@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/boxicons.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Contact us at Make Known</title>
+    <title>Portfolio | Make Known</title>
 </head>
 <body>
     
@@ -24,8 +25,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="nav-active">Contact</a></li>
+            <li><a href="portfolio.html" class="nav-active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
 
@@ -39,77 +40,91 @@
           <li><a class="nav-link" href="index.html">Home</a></li>
           <li><a class="nav-link2" href="about-us.html">About</a></li>
           <li><a class="nav-link3" href="services.html">Services</a></li>
-          <li><a class="nav-link3" href="portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link3 nav-active" href="contact.html">Contact</a></li>
+          <li><a class="nav-link3 nav-active" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link3" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="contact pad">
-      <div class="left">
-        <h5>
-          CONTACT US
-        </h5>
-
+    <section class="service-hero pad">
         <h1>
-          We’d love to hear <span class="break">from you</span>
+            Our Portfolio
         </h1>
 
-        <h1>
-          Get in touch today
-        </h1>
+        <p>
+            A showcase of our success stories.
+        </p>
+    </section>
 
-        <h5 class="para">
-          Please feel free to reach out to us using the contact form or through any of the contact methods provided. Our team is ready to assist you in achieving your marketing goals and driving success for your business. <br> <br> Get in touch with us today and let's start shaping the future of your brand together!
-        </h5>
+    <section class="pad offer">
+      <div class="offer-content">
+          <h5 class="sub-title">
+            FEATURED PROJECTS
+          </h5>
+      </div>
 
-        <div class="contact-details">
-          <a href="mailto:enquiries@makeknown.ca"><i class='bx bx-envelope'></i> enquiries@makeknown.ca</a>
+      <div class="projects">
+        <div class="card">
+            <div class="img">
+                <img src="portfolio/featuredIMG/black tourist.webp" alt="Black tourist">
+            </div>
 
-          <a href="tel:+13433649095"><i class='bx bx-phone'></i> 343 - 364 - 9095</a>
+            <div class="content">
+                <h3>
+                    The Black Tourist
+                </h3>
+
+                <p>
+                    Empowering the Black community through engaging social media content.
+                </p>
+            </div>
+            
+            <a href="contact.html" type="button" class="pri-btn">Let's Talk <img src="img/arrow right.svg" alt=""></a>
+
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="portfolio/featuredIMG/black tourist.webp" alt="Black tourist">
+            </div>
+
+            <div class="content">
+                <h3>
+                    The Black Tourist
+                </h3>
+
+                <p>
+                    Empowering the Black community through engaging social media content.
+                </p>
+            </div>
+            
+            <a href="contact.html" type="button" class="pri-btn">Let's Talk <img src="img/arrow right.svg" alt=""></a>
+
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="portfolio/featuredIMG/black tourist.webp" alt="Black tourist">
+            </div>
+
+            <div class="content">
+                <h3>
+                    The Black Tourist
+                </h3>
+
+                <p>
+                    Empowering the Black community through engaging social media content.
+                </p>
+            </div>
+            
+            <a href="contact.html" type="button" class="pri-btn">Let's Talk <img src="img/arrow right.svg" alt=""></a>
+
         </div>
       </div>
 
-      <div class="right">
-        <form action="" method="">
-          <div class="form-field">
-            <div class="form">
-              <div class="form-details">
-                <label for="name">Name</label>
-                <input type="name" id="name" class="box" placeholder="John Carter" required>  
-              </div>
-
-              <div class="form-details">
-                <label for="email">Email</label>
-                <input type="email" class="box" id="email" placeholder="example@email.com" required>    
-              </div>
-            </div>
-
-            <div class="form">
-              <div class="form-details">
-                <label for="phone">Phone</label>
-                <input type="number" id="phone" class="box" placeholder="(123) 456 - 789" required>  
-              </div>
-
-              <div class="form-details">
-                <label for="company">Company</label>
-                <input type="text" class="box" placeholder="Facebook">    
-              </div>
-            </div>
-
-          </div>
-
-          <div class="form-details">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" class="box box2" placeholder="Please type your message here..." required></textarea>
-          </div>
-
-          <button disabled type="submit" id="submit" class="pri-btn button">Send Message</button>
-        </form>
-      </div>
     </section>
 
+  
 
+    
     <footer>
       <a href="#" class="to-top"><i class='bx bxs-chevron-up'></i></a>
       <div class="main-footer">
@@ -229,6 +244,6 @@
 
 
     <script src="js/app.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/modal-pop.js"></script>
 </body>
 </html>
