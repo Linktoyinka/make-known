@@ -116,7 +116,7 @@ html {
   border-radius: 50px;
   color: var(--primary);
   cursor: pointer;
-  background-color: var(--white);
+  background-color: transparent;
 
   font-weight: 500;
   font-size: 20px;
@@ -727,6 +727,11 @@ footer {
   transition: ease-in-out .4s;
 }
 
+
+.service-work .content .heading a:active {
+  color: var(--primary);
+}
+
 .service-work .btn-center .sec-btn{
   display: none;
 }
@@ -1025,10 +1030,6 @@ form button {
   .service-work .content .heading a {
     font-size: 100px;
   }
-
-  .service-work .content .heading a:active {
-    color: var(--primary);
-  }
 }
 
 
@@ -1312,10 +1313,22 @@ form button {
 
   .service-work .btn-center .sec-btn {
     display: unset;
+
+    color: var(--white);
+    border-color: var(--white);
+    margin-top: 20px;
   }
 
-  .service-work .content .heading {
+  .service-work .btn-center .sec-btn:hover {
+    background-color: unset;
+  }
+
+  /* .service-work .content .heading {
     display: none;
+  } */
+  .service-work .content .heading a {
+    font-size: 50px;
+    color: var(--white);
   }
 
   .contact-details {
