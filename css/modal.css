@@ -18,14 +18,20 @@
 
 .modal-content {
   background-color: #fefefe;
-  margin:  auto;
+  margin: 7% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  max-height: 90vh;
   height: fit-content;
   max-height: 100%;
   border-radius: 24px;
   overflow: auto;
+}
+
+.micah {
+  margin: 25px auto;
+  height: 90vh;
 }
 
 .close {
@@ -85,5 +91,11 @@ p {
     .modal-content {
       width: 100%;
       border-radius: 0;
+      margin: auto;
+    }
+
+    .micah {
+      margin: auto;
+      height: 100%;
     }
 }
