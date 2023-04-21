@@ -19,6 +19,7 @@ btnTobi.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  body.classList.remove('popup-active')
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -38,6 +39,7 @@ const spanMicah = document.getElementsByClassName("close-2")[0];
 // When the user clicks on the button, open the modal
 btnMicah.onclick = function() {
   modalMicah.style.display = "block";
+  body.classList.add('popup-active')
 }
 
 btnMicahMobile.onclick = function() {
@@ -47,6 +49,7 @@ btnMicahMobile.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 spanMicah.onclick = function() {
   modalMicah.style.display = "none";
+  body.classList.remove('popup-active')
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -66,6 +69,7 @@ const spanSharon = document.getElementsByClassName("close-3")[0];
 // When the user clicks on the button, open the modal
 btnSharon.onclick = function() {
   modalSharon.style.display = "block";
+  body.classList.add('popup-active')
 }
 
 btnSharonMobile.onclick = function() {
@@ -75,6 +79,7 @@ btnSharonMobile.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 spanSharon.onclick = function() {
   modalSharon.style.display = "none";
+  body.classList.remove('popup-active')
 }
 
 // When the user clicks anywhere outside of the modal, close it
