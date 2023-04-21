@@ -10,15 +10,9 @@
   /* outline: 2px solid red; */
 }
 
-body {
-  
-}
-
 
 
 html {
-  max-width: 1440px;
-  margin: auto;
   scroll-behavior: smooth;
 }
 
@@ -1444,4 +1438,17 @@ form button {
   .team .card .content button {
     display: unset;
   }
+}
+
+
+@media screen and (min-width: 1440px){
+section, header, footer {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service-hero {
+  max-width: unset;
+}
 }
