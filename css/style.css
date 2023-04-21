@@ -10,6 +10,12 @@
   /* outline: 2px solid red; */
 }
 
+body {
+  
+}
+
+
+
 html {
   max-width: 1440px;
   margin: auto;
@@ -138,6 +144,10 @@ html {
 
 .sec-btn:active {
   background-color: var(--primary-700);
+}
+
+.popup-active {
+  overflow: hidden;
 }
 
 small {

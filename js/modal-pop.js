@@ -3,10 +3,12 @@ const modal = document.getElementById("myModal1");
 const btn = document.getElementById("modal1");
 const btnTobi = document.getElementById("modal1a");
 const span = document.getElementsByClassName("close-1")[0];
+const body = document.getElementById("body");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
+  body.classList.add('popup-active')
 }
 
 // for mobile trigger
