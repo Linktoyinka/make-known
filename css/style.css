@@ -11,8 +11,11 @@
 }
 
 html {
+  max-width: 1440px;
+  margin: auto;
   scroll-behavior: smooth;
 }
+
 
 :root {
   --black: #0a0a0a;
@@ -99,6 +102,11 @@ html {
   background-color: #B3B3B3;
   cursor: not-allowed;
   border: 2px solid #B3B3B3;
+  outline: none;
+}
+
+.pri-btn:disabled:active {
+  background-color: #B3B3B3;
 }
 
 .pri-btn:active {
@@ -404,6 +412,7 @@ nav {
 
 .more .tile .card .card-title {
   padding: 15px 15px;
+  text-align: center;
 }
 
 /* WHY US SECTION */
