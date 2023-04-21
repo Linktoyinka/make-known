@@ -40,7 +40,17 @@ figcaption {
 }
 
 .p-links {
-    padding: 20px 5%;
+    padding: 40px 5%;
+}
+
+.p-links h2 {
+    margin-bottom: 20px;
+}
+
+.portfolio-links {
+    display: grid;
+    place-items: center;
+    gap: 15px;
 }
 
 .portfolio-links a {
@@ -48,8 +58,6 @@ figcaption {
     font-size: 20px;
     color: #006DDC;
     margin: 20px;
-    
-    /* width: 100%; */
 }
 
 .portfolio-links a:hover {
