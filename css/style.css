@@ -101,7 +101,6 @@ html {
 .pri-btn:disabled {
   background-color: #B3B3B3;
   cursor: not-allowed;
-  border: 2px solid #B3B3B3;
   outline: none;
 }
 
@@ -454,8 +453,13 @@ nav {
   width: 50%;
 }
 
+.blog .left {
+  /* height: fit-content; */
+}
+
 .blog .left img {
   width: 100%;
+  /* height: 1100%; */
 }
 
 .blog .right {
