@@ -21,12 +21,20 @@
 
 function sendEmail() {
   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "username",
-    Password: "password",
-    To: "them@website.com",
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
+    SecureToken: "806ed3d2-7aca-4a3e-a1b1-523a4d51e7c0",
+    // Username: "linktoyinka@gmail.com",
+    // Password: "5CAA65F24CE36E2FDA9A865CF85D40DAAE9C",
+    To: "afolabi2401@gmail.com",
+    From: "linktoyinka@gmail.com",
+    Subject: "MakeKnown New Contact Form Enquiry",
+    Body: 
+    "Name: " +
+    document.getElementById("name").value +
+    "<br> Email: " +
+    document.getElementById("email").value +
+    "<br> Message: " +
+    document.getElementById("message").value + "<br> Phone: " + document.getElementById("phone").value
   }).then((message) => alert(message));
 }
+
+
