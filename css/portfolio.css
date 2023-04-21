@@ -36,6 +36,7 @@ li::marker {
 figcaption {
     text-align: center;
     color: #808080;
+    margin-top: 5px;
 }
 
 .p-links {
