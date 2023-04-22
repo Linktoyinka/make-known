@@ -1437,7 +1437,7 @@ form button {
     margin-left: auto;
   }
 
-  .service-hero,
+  /* .service-hero, */
   footer,
   header {
     max-width: unset;
