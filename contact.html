@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Contact us at Make Known</title>
 </head>
@@ -71,7 +72,7 @@
       </div>
 
       <div class="right">
-        <form onsubmit="sendEmail(); reset; return false;">
+        <form onsubmit="sendEmail(); reset; return false;" id="myForm">
           <div class="form-field">
             <div class="form">
               <div class="form-details">
@@ -88,7 +89,7 @@
             <div class="form">
               <div class="form-details">
                 <label for="phone">Phone</label>
-                <input type="number" id="phone" class="box" placeholder="(123) 456 - 789" required>  
+                <input type="text" pattern="[-+]?\d*" id="phone" class="box" placeholder="+1 (123) 456 - 789" required>  
               </div>
 
               <div class="form-details">
@@ -106,6 +107,25 @@
 
           <button disabled type="submit" id="submit" class="pri-btn button">Send Message</button>
         </form>
+      </div>
+
+      <div id="myModal1" class="modal">
+
+        <!-- Tobi Oyebanji Modal content -->
+        <div class="modal-wrap">
+          <div class="modal-content contact-modal">
+            <div class="close-btn"><div class="close close-1">&times;</div></div>
+
+            <p class="heading">
+              YOUR MESSAGE HAS BEEN SENT
+            </p>
+            <p class="main-content">
+              Our team will be in contact with you shortly.
+            </p>
+  
+          </div>
+        </div>
+      
       </div>
     </section>
 
@@ -232,6 +252,7 @@
     <script src="js/app.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/smtp.js"></script>
+    <!-- <script src="js/modal-pop.js"></script> -->
 
 </body>
 </html>
