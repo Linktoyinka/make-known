@@ -10,12 +10,9 @@
   /* border: 2px solid red; */
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
-
 
 :root {
   --black: #0a0a0a;
@@ -26,7 +23,7 @@ html {
   --grey-100: #e6e6e6;
   --primary-700: #004993;
   --primary-50: #cce2f8;
-  --grey-80: #F9F9F9;
+  --grey-80: #f9f9f9;
   --grey-500: #333333;
 }
 
@@ -36,7 +33,7 @@ html {
   right: 40px;
   /* bottom: 40px; */
   pointer-events: none;
-  transition: all .4s;
+  transition: all 0.4s;
   opacity: 0;
   height: 40px;
   width: 40px;
@@ -46,7 +43,6 @@ html {
   font-size: 20px;
   display: grid;
   place-content: center;
-
 }
 
 .to-top.active {
@@ -94,18 +90,18 @@ html {
 
 .pri-btn:hover {
   background-color: var(--primary-hover);
-  outline: 4px solid #CCE2F8;
+  outline: 4px solid #cce2f8;
   transition: 0.6s;
 }
 
 .pri-btn:disabled {
-  background-color: #B3B3B3;
+  background-color: #b3b3b3;
   cursor: not-allowed;
   outline: none;
 }
 
 .pri-btn:disabled:active {
-  background-color: #B3B3B3;
+  background-color: #b3b3b3;
 }
 
 .pri-btn:active {
@@ -208,19 +204,16 @@ p {
 }
 
 /* HEADER STYLE */
-/* header {
-  position: sticky;
-    top: 0;
-    z-index: 1;
-} */
+header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey-100);
+}
 
 .header {
   padding: 10px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white);
-  border-bottom: 1px solid var(--grey-100);
 }
 
 .header a,
@@ -600,7 +593,7 @@ footer {
   display: flex;
 }
 
-.offer .tile .tile-content:not(:first-child) {  
+.offer .tile .tile-content:not(:first-child) {
   margin: 64px 0;
 }
 
@@ -622,8 +615,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  
 }
 
 .offer .tile .tile-content .right h3 {
@@ -701,23 +692,23 @@ footer {
 }
 
 .circle-1 {
-  background-color: #006DDC;
+  background-color: #006ddc;
 }
 
 .circle-2 {
-  background-color: #006DDCD9;
+  background-color: #006ddcd9;
 }
 
 .circle-3 {
-  background-color: #006DDC99;
+  background-color: #006ddc99;
 }
 
 .circle-4 {
-  background-color: #006DDC59;
+  background-color: #006ddc59;
 }
 
 .circle-5 {
-  background-color: #006DDC1A;
+  background-color: #006ddc1a;
 }
 
 .service-work {
@@ -727,7 +718,6 @@ footer {
   background-size: cover;
   padding: 180px 5%;
 
-  
   display: grid;
   place-items: center;
   width: 100%;
@@ -735,25 +725,23 @@ footer {
 
 .service-work .content .heading a {
   font-size: 144px;
-  font-weight: 700; 
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.644);
 }
 
 .service-work .content .heading a:hover {
   color: var(--white);
   transform: scale(1.1);
-  transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
 }
-
 
 .service-work .content .heading a:active {
   color: var(--primary);
 }
 
-.service-work .btn-center .sec-btn{
+.service-work .btn-center .sec-btn {
   display: none;
 }
-
 
 /* CONTACT PAGE */
 .contact {
@@ -776,7 +764,7 @@ footer {
 }
 
 .contact h5 {
-  color: var(--grey);  
+  color: var(--grey);
 }
 
 .contact h1 {
@@ -853,7 +841,7 @@ label {
 }
 
 .box::placeholder {
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .box2 {
@@ -872,7 +860,6 @@ input[type="number"]::-webkit-inner-spin-button {
 form button {
   margin-top: 32px;
 }
-
 
 /* ABOUT PAGE */
 .strategies {
@@ -906,15 +893,15 @@ form button {
   border-radius: 24px;
   border: 1px solid var(--grey-100);
   text-align: center;
-  padding: 40px;  
+  padding: 40px;
   cursor: pointer;
   display: grid;
   place-items: center;
 }
 .team .card:hover {
   transform: scale(1.1);
-  transition: .4s;
-  background-color: #F8FBFE;
+  transition: 0.4s;
+  background-color: #f8fbfe;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -936,7 +923,7 @@ form button {
 
 .team .card:hover .team-img {
   transform: scale(1.1);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .team .card .content {
@@ -986,8 +973,6 @@ form button {
 .projects .card .content p {
   font-size: 16px;
 }
-
-
 
 @media screen and (max-width: 1000px) {
   h1 {
@@ -1066,7 +1051,8 @@ form button {
     top: 40px;
   }
 
-  .contact-details a, .about-contact-details a {
+  .contact-details a,
+  .about-contact-details a {
     font-size: 16px;
   }
 
@@ -1075,13 +1061,11 @@ form button {
   }
 }
 
-
 /* PORTFOLIO PAGE */
 .projects {
   display: flex;
   flex-wrap: wrap;
   gap: 6%;
-
 }
 
 .projects .card {
@@ -1100,10 +1084,6 @@ form button {
 .projects .card .content p {
   margin: 0;
 }
-
-
-
-
 
 @media screen and (max-width: 870px) {
   .more .tile .card {
@@ -1164,7 +1144,8 @@ form button {
     gap: 50px;
   }
 
-  .contact .left, .contact .right {
+  .contact .left,
+  .contact .right {
     width: 100%;
   }
 
@@ -1187,7 +1168,7 @@ form button {
     width: 45%;
     padding: 20px;
   }
-  
+
   .team .card .img {
     height: 120px;
     width: 120px;
@@ -1244,7 +1225,6 @@ form button {
     width: 48%;
     margin-top: 32px;
   }
-  
 
   .more-2 .tile .card:last-child {
     display: none;
@@ -1406,10 +1386,11 @@ form button {
   .box2 {
     aspect-ratio: 4/2;
   }
-  
 
-  .contact, .service-hero {
-    background-image: url(/img/mobilebg\ right.webp), url(/img/mobilebg\ left.webp);
+  .contact,
+  .service-hero {
+    background-image: url(/img/mobilebg\ right.webp),
+      url(/img/mobilebg\ left.webp);
     background-position: 100% 0, 0 0;
     background-repeat: no-repeat, no-repeat;
     background-size: contain, contain;
@@ -1445,15 +1426,24 @@ form button {
   }
 }
 
-
-@media screen and (min-width: 1440px){
-section, header, footer {
+@media screen and (min-width: 1440px) {
+  section,
+  header,
+  .footer,
+  .header {
+    width: 100%;
     max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
-}
+  }
 
-.service-hero {
-  max-width: unset;
-}
+  .service-hero,
+  footer,
+  header {
+    max-width: unset;
+  }
+
+  .header {
+    padding: 10px 50px;
+  }
 }
