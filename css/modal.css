@@ -48,7 +48,7 @@
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 16px;
+  margin: -35px 0 16px 0 !important;
 }
 
 .modal-content .main-content {
@@ -137,6 +137,7 @@ p {
     .modal-content .heading {
       font-size: 12px;
       font-weight: 600;
+      margin: -20px 0 5px 0 !important;
     }
     
     .modal-content .main-content {
