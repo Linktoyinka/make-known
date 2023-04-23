@@ -26,7 +26,7 @@ const body = document.getElementById("body");
 function sendEmail() {
   Email.send({
     SecureToken: "9e9950cf-77a3-4e50-afc6-8eb948f35a7f",
-    To: "linktoyinka@gmail.com",
+    To: "enquiries@makeknown.ca",
     From: "makeknownca@gmail.com",
     Subject: "MakeKnown New Contact Form Enquiry",
     Body: 
