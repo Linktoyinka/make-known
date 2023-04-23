@@ -48,7 +48,11 @@
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  margin: -35px 0 16px 0 !important;
+  margin: -10px 0 16px 0 !important;
+}
+
+.c-close {
+  margin: -20px -20px 0 0;
 }
 
 .modal-content .main-content {
@@ -142,5 +146,9 @@ p {
     
     .modal-content .main-content {
       font-size: 20px;
+    }
+  
+    .c-close {
+      margin: -10px -10px 0 0;
     }
 }
