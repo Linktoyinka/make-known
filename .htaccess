@@ -1,4 +1,4 @@
-ErrorDocument 404 /index.html
+ErrorDocument 404 https://makeknown.ca
 
 
 
