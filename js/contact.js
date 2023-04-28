@@ -1,3 +1,4 @@
+// validation for contact form submission
 const submitBtn = document.getElementById("submit");
 const name = document.getElementById("name");
 const phone = document.getElementById("phone");

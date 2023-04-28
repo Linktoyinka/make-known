@@ -42,6 +42,7 @@ btnMicah.onclick = function() {
   body.classList.add('popup-active')
 }
 
+// mitch mobile trigger
 btnMicahMobile.onclick = function() {
   modalMicah.style.display = "block";
 }
@@ -72,6 +73,7 @@ btnSharon.onclick = function() {
   body.classList.add('popup-active')
 }
 
+// sharon mobile trigger
 btnSharonMobile.onclick = function() {
   modalSharon.style.display = "block";
 }

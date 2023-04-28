@@ -1,23 +1,4 @@
-
-// function sendEmail() {
-//   Email.send({
-//     SecureToken: "806ed3d2-7aca-4a3e-a1b1-523a4d51e7c0",
-//     To: "afolabi2401@gmail.com",
-//     From: "linktoyinka@gmail.com",
-//     Subject: "MakeKnown New Contact Form Enquiry",
-//     Body: 
-//     "Name: " +
-//     document.getElementById("name").value +
-//     "<br> Email: " +
-//     document.getElementById("email").value +
-//     "<br> Message: " +
-//     document.getElementById("message").value + "<br> Phone: " + document.getElementById("phone").value
-//   }).then((message) => alert(message));
-// }
-
-
-
-// const form = document.getElementById('myForm');
+// smtpJS set up for contact form
 const modal = document.getElementById("myModal1");
 const btn = document.getElementById("modal1");
 const span = document.getElementsByClassName("close-1")[0];
@@ -37,20 +18,16 @@ function sendEmail() {
     "<br> Message: " +
     document.getElementById("message").value + "<br> Phone: " + document.getElementById("phone").value
   }).then((popUp));
-
-  
-
-
 }
 
+
+// pop-up function for sucessful form submission
 function popUp() {
-  // btn.onclick = function() {
     modal.style.display = "block";
-    body.classList.add('popup-active')
-
-    
+    body.classList.add('popup-active')    
 }
 
+// cancle button on pop-up
 span.onclick = function() {
   modal.style.display = "none";
   body.classList.remove('popup-active')
