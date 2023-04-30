@@ -1,0 +1,13 @@
+.btn-center2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media screen and (max-width: 650px) {
+    .btn-center2 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
